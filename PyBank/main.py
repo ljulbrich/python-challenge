@@ -64,7 +64,7 @@ if __name__ == "__main__":
                   f'-------------------------------------\n'
                   f'Total Months: {month_count}\n'
                   f'Total: ${net_total}\n'
-                  f'Average Change: ${average_change}\n'
+                  f'Average Change: ${"%.2f" % average_change}\n'
                   f'Greatest Increase in Profits: {increase[1]} (${increase[0]})\n'
                   f'Greatest Decrease in Profits: {decrease[1]} (${decrease[0]})\n')
 
