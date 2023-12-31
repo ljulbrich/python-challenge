@@ -52,8 +52,26 @@ if __name__ == "__main__":
         for item in candidates_total:
             candidates_percent.append((item/total_votes)*100)
 
-        print(f'Total votes {total_votes}\n'
-              f'Candidates {candidates}\n'
-              f'Candidates votes {candidates_total}\n'
-              f'Candidate percent {candidates_percent}') # TODO: format decimals
+        # This line returns the index of the candidate with the most votes
+        winner_index = candidates_total.index(max(candidates_total))
 
+        # This starts writing the election results string
+        output = (f'Election Results\n'
+                  f'-------------------------\n'
+                  f'Total Votes: {total_votes}\n'
+                  f'-------------------------\n')
+
+        # This adds each candidate and the total votes to the string
+        for item in candidates_total:
+            index = candidates_total.index(item)
+            output += f'{candidates[index]}: {"%.3f" % candidates_percent[index]}% ({item})\n'
+
+        # This adds the winner to the output string
+        output += (f'-------------------------\n'
+                   f'Winner: {candidates[winner_index]}\n'
+                   f'-------------------------')
+
+        # This section prints the output to the terminal and then saves it as a text file
+        print(output)
+        txt_file.write(output)
+        txt_file.close()
