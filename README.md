@@ -12,26 +12,26 @@ scripting skills come in handy.
 
 ### PyBank
 
-    ```main.py```
-    * This is the main python file which runs the code for the PyBank portion of this challenge
+```main.py```
+* This is the main python file which runs the code for the PyBank portion of this challenge
 
-    ```/Resources/budget_data.csv```
-    * This file is the csv file which is analysed by main.py
+```/Resources/budget_data.csv```
+* This file is the csv file which is analysed by main.py
 
-    ```/Analysis/data_analysis.txt/```
-    * This is the output file from main.py
+```/Analysis/data_analysis.txt/```
+* This is the output file from main.py
 
 ### PyPoll
 
-    ```main.py```
-    * This is the main python file which runs the code for the PyPoll portion of this challenge
+```main.py```
+* This is the main python file which runs the code for the PyPoll portion of this challenge
 
-    ```/Resources/election_data.csv```
-    * This file is the csv file which is analysed by main.py
+```/Resources/election_data.csv```
+* This file is the csv file which is analysed by main.py
 
-    ```/Resources/election_data.xlsx```
-    * This is a file created to include a pivot table with the total values of the data
-    * This was used to check the functionality of main.py and is not used in the main program
+```/Resources/election_data.xlsx```
+* This is a file created to include a pivot table with the total values of the data
+* This was used to check the functionality of main.py and is not used in the main program
 
-    ```/Analysis/data_analysis.txt/```
-    * This is the output file from main.py
+```/Analysis/data_analysis.txt/```
+* This is the output file from main.py
